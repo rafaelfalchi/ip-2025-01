@@ -1,0 +1,14 @@
+package main
+import "fmt"
+import "math"
+func main() {
+  var C, F, mm, polegadas float64
+  fmt.Scanf("%v", &F)
+  C = (5 * F - 160) / 9
+  roundC := math.Round(100 * C) / 100
+  fmt.Scanf("%v", &polegadas)
+  mm = 25.4 * polegadas
+  roundmm := math.Round(100 * mm) / 100
+  fmt.Printf("O VALOR EM CELSIUS = %v\n", roundC)
+  fmt.Printf("A QUANTIDADE DE CHUVA E = %v\n", roundmm)
+}
