@@ -1,0 +1,19 @@
+package main
+import "fmt"
+import "math"
+func main() {
+  var nota float64
+  fmt.Scanf("%v", &nota)
+  roundnota := math.Round(10*nota)/10
+  fmt.Printf("NOTA = %v CONCEITO = ", roundnota)
+  if nota >= 0 && nota < 6 {
+      fmt.Printf("D")
+  } else if nota >= 6 && nota < 7.5 {
+      fmt.Printf("C")
+  } else if nota >= 7.5 && nota < 9 {
+      fmt.Printf("B")
+  } else if nota >= 9 && nota<= 10 {
+      fmt.Printf("A")
+  }
+  fmt.Print("\n")
+}
