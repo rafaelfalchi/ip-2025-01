@@ -1,0 +1,10 @@
+package main
+import "fmt"
+
+func main() {
+    var raio, altura, custo float64
+    fmt.Scanf("%v", &raio)
+    fmt.Scanf("%v", &altura)
+    custo = 628.318 * raio * (raio + altura)
+    fmt.Printf("O VALOR DO CUSTO E = %v\n", custo)
+}
