@@ -1,0 +1,31 @@
+package main
+import "fmt"
+import "math"
+func main() {
+    var (
+        tipo string
+        conta int
+        agua, custo float64
+    )
+    fmt.Scanf("%v", &conta)
+    fmt.Scanf("%v", &agua)
+    fmt.Scanf("%v", &tipo)
+    if tipo == "R" {
+        custo = 0.05*agua + 5
+    } else if tipo == "C" {
+        if agua >= 80 {
+            custo = 0.25*(agua - 80) + 500
+        } else {
+            custo = 500
+        }
+    } else if tipo == "I" {
+        if agua >= 100 {
+            custo = 0.04*(agua - 100) + 800
+        } else {
+            custo = 800
+        }
+    }
+    fmt.Printf("CONTA = %v\n", conta)
+    roundcusto := math.Round(100*custo)/100
+    fmt.Printf("VALOR DA CONTA = %v\n", roundcusto)
+}
