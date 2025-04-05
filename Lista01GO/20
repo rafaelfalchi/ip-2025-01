@@ -1,0 +1,11 @@
+package main
+import "fmt"
+
+func main() {
+    var  horas, minutos, segundos, temposegundos int
+    fmt.Scanf("%v", &horas)
+    fmt.Scanf("%v", &minutos)
+    fmt.Scanf("%v", &segundos)
+    temposegundos = 3600 * horas + 60 * minutos + segundos
+    fmt.Printf("O TEMPO EM SEGUNDOS E = %v\n", temposegundos)
+}
