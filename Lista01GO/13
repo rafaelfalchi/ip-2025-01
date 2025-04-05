@@ -1,0 +1,12 @@
+package main
+import "fmt"
+import "math"
+
+func main() {
+  var altura, aresta, volume float64
+  fmt.Scanf("%v", &altura)
+  fmt.Scanf("%v", &aresta)
+  volume = aresta*aresta*altura*math.Sqrt(3)/ 2
+  roundvolume := math.Round(100*volume)/100
+  fmt.Printf("O VOLUME DA PIRAMIDE E =  %v METROS CUBICOS\n", roundvolume)
+}
