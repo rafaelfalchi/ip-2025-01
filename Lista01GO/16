@@ -1,0 +1,17 @@
+package main
+import "fmt"
+
+func main() {
+    var  x, y int
+    fmt.Scanf("%v ", &x)
+    if x % 2 == 0 {
+        fmt.Scanf("%v\n", &y)
+        for i := 1; i <= y; i++{
+            fmt.Printf("%v ", x)
+            x = x + 2
+        }
+    } else {
+        fmt.Print("O PRIMEIRO NUMERO NAO E PAR")
+    }
+    fmt.Print("\n")
+}
