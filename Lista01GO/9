@@ -1,0 +1,13 @@
+package main
+import "fmt"
+import "math"
+func main() {
+  var a, b, c, d, det float64
+  fmt.Scanf("%v", &a)
+  fmt.Scanf("%v", &b)
+  fmt.Scanf("%v", &c)
+  fmt.Scanf("%v", &d)
+  det = a*d - b*c
+  rounddet := math.Round(100*det)/100
+  fmt.Printf("O VALOR DO DETERMINANTE E = %v", rounddet)
+}
