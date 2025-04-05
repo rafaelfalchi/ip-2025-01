@@ -1,0 +1,13 @@
+package main
+import "fmt"
+
+func main() {
+    var  a, r, n, soma int
+    fmt.Scanf("%v ", &a)
+    fmt.Scanf("%v ", &r)
+    fmt.Scanf("%v", &n)
+    for i := 1; i <= n; i++ {
+        soma = soma + i
+    }
+    fmt.Printf("%v\n", soma)
+}
