@@ -1,0 +1,17 @@
+package main
+import "fmt"
+import "math"
+func main() {
+  var n1, n2, n3, media float64
+  fmt.Scanf("%v", &n1)
+  fmt.Scanf("%v", &n2)
+  fmt.Scanf("%v", &n3)
+  media=(n1+n2+n3)/3
+  roundmedia := math.Round(100 * media) / 100
+  fmt.Printf("MEDIA = %v\n", roundmedia)
+  if media >= 6 {
+    fmt.Print("APROVADO")
+  } else {
+    fmt.Print("REPROVADO")
+  }
+}
