@@ -1,0 +1,17 @@
+package main
+import "fmt"
+import "math"
+func main() {
+    var (
+        C, F float64
+        n int
+    )
+    fmt.Scanf("%v", &n)
+    for i := 1; i <= n; i++ {
+        fmt.Scanf("%v", &F)
+        C = 5*(F - 32)/9
+        roundF := math.Round(100*F)/100
+        roundC := math.Round(100*C)/100
+        fmt.Printf("%v FAHRENHEIT EQUIVALE A %v CELSIUS\n", roundF, roundC)
+    }
+}
