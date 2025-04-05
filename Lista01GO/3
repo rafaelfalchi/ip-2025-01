@@ -1,0 +1,23 @@
+package main
+import "fmt"
+
+func main() {
+    var n1, n2, n3, x int
+    fmt.Scanf("%v", &n1)
+    fmt.Scanf("%v", &n2)
+    fmt.Scanf("%v", &n3)
+    if n1 < 10 && n2 < 10 && n3 < 10 {
+        if n1 != 0 {
+            x = (100*n1 + 10*n2 + n3)*(100*n1 + 10*n2 + n3)
+            fmt.Printf("%v%v%v, %v", n1, n2, n3, x)
+        } else if n2 != 0 {
+            fmt.Printf("%v%v, %v", n2, n3, x)
+            x = (10*n2 + n3)*(10*n2 + n3)
+        } else {
+            fmt.Printf("%v, %v", n3, x)
+            x = n3 * n3
+        }
+    } else {
+        fmt.Print("DIGITO INVALIDO")
+    }
+}
