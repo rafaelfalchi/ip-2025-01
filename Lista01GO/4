@@ -1,0 +1,14 @@
+package main
+import "fmt"
+
+func main() {
+    var salario, gastoenergia, precokw, custodinheiro, custodesconto float64
+    fmt.Scanf("%v", &salario)
+    fmt.Scanf("%v", &gastoenergia)
+    precokw = 0.007*salario
+    custodinheiro = gastoenergia*precokw
+    custodesconto = 0.9*custodinheiro
+    fmt.Printf("Custo por kW: R$ %v\n", precokw)
+    fmt.Printf("Custo de consumo: R$ %v\n", custodinheiro)
+    fmt.Printf("Custo com desconto: R$ %v\n", custodesconto)
+}
