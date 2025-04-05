@@ -1,0 +1,20 @@
+package main
+import "fmt"
+import "math"
+func main() {
+    var (
+        publico, popular, geral, arquibancada, cadeiras, renda float64
+        n int
+    )
+    fmt.Scanf("%v", &n)
+    for i := 1; i <= n; i++ {
+        fmt.Scanf("%v", &publico)
+        fmt.Scanf("%v", &popular)
+        fmt.Scanf("%v", &geral)
+        fmt.Scanf("%v", &arquibancada)
+        fmt.Scanf("%v", &cadeiras)
+        renda = publico*(popular + 5*geral + 10*arquibancada + 20*cadeiras)/100
+        roundrenda := math.Round(100*renda)/100
+        fmt.Printf("A RENDA DO JOGO N.%v E = %v\n", i, roundrenda)
+    }
+}
