@@ -1,0 +1,19 @@
+package main
+import "fmt"
+import "math"
+
+func main() {
+  var n, soma, i float64
+  soma = 0
+  fmt.Scanf("%v", &n)
+  roundn := math.Round(n)
+  if n > 1 && n == roundn {
+      for i = 1; i <= n; i++ {
+          soma = soma + 1/i
+      }
+      roundsoma := math.Round(1000000*soma)/1000000
+      fmt.Printf("%v", roundsoma)
+  } else {
+      fmt.Print("Numero invalido!")
+  }
+}
