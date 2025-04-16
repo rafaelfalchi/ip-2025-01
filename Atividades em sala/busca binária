@@ -1,15 +1,15 @@
 package main
 import "fmt"
-
 func main() {
     var(
         vetor[1000] int
-        x, e, d, m int = 0, 0, 999, 0
+        x, e, d, m int
     )
     for i := 0; i < 1000; i++{
         vetor[i] = (i+1)
     }
     fmt.Scan(&x)
+    d = len(vetor)-1
     for e <= d{
         m = (e+d)/2
         if vetor[m] == x{
